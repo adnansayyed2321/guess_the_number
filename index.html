@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+    .showMessage{
+        display: flex !important;
+        flex-direction: column;
+    }
+    .resultsPara{
+        display: none;
+    }
+</style>
+<body>
+    <div class="parent">
+        <h1>Guess The Number</h1>
+        <p>From 1 To 100</p>
+        <form>
+            <input id="guessNumber"/>
+            <button class="button">Submit Guess</button>
+        </form>
+        <div class="resultsPara">
+            <p>Previous Guesses :<span class="PreviousGuessess"></span></p>
+            <p>Guesses Remaining <span class="remaining"></span></p>
+            <p class="lowOrHigh"></p>
+            <p class="winStatus" id ="start"></p>
+        </div>
+        
+    </div>
+</body>
+<script src ="index.js"></script>
+</html>
